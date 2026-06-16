@@ -4,7 +4,7 @@ Vérification de **licence / abonnement** pour une application Laravel : un midd
 interroge un **serveur de licence central** (appel signé HMAC), met le résultat en
 cache, et **bloque le site** (page propre) si la licence n'est pas active.
 
-- Compatible **Laravel 10, 11 et 12**, PHP 8.1+.
+- Compatible **Laravel 9, 10, 11 et 12**, PHP 8.0+.
 - **Auto-découverte** : provider, alias de middleware `license`, config et vue de
   blocage disponibles dès l'installation — rien à enregistrer à la main.
 - **Fail-open** par défaut : si le serveur est injoignable, le site reste ouvert.

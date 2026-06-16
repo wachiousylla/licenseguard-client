@@ -1,0 +1,28 @@
+{
+    "name": "licenseguard/laravel-client",
+    "description": "Client de vérification de licence / abonnement pour applications Laravel : middleware de blocage + appel signé HMAC à un serveur de licence central.",
+    "type": "library",
+    "keywords": ["laravel", "license", "subscription", "middleware", "saas"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/http": "^10.0|^11.0|^12.0",
+        "illuminate/console": "^10.0|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LicenseGuard\\Client\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LicenseGuard\\Client\\LicenseGuardServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
